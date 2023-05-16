@@ -1,5 +1,4 @@
 f(x)=exp(x)*log(x)-x*x
-set key off
 set xlabel "x" font "Arial, 26"
 set ylabel "f(x)" font "Arial, 26"
 set xrange [0:3]
