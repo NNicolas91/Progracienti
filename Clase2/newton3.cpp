@@ -1,25 +1,28 @@
-#include<iostream>
-#include<math.h>
+//Marco V. Bayas Mayo-2023.
+//Programa para encontrar la raiz de una función
+//Método: Newton-Raphson.
+
+#include <iostream>
+#include <math.h>
 
 using namespace std;
 
 double fx (double x)
-
 {
 
 double f;
 
-f=((15+50)/5)*x + 50 * 5 * log(1-x/(25));
+f = 13*x + 250*log(1 - x/25);
 
 return f;
-
 }
 double dfx (double x)
 {
- double f;
 
- f= ((15+50)/5) + 50 * 5 * (-1/25)/(1-x/(25));
- return f;
+ double dfx;
+
+ dfx= 13 - 250/(25-x);
+ return dfx;
 }
 
 int main()

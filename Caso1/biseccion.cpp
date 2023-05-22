@@ -18,15 +18,16 @@ double fx (double x)
 int main()
 {
  int count;
- double a,b,x,error,del;
+ double a,b,x,error,del, ite;
  del=1e-6;
  
  cout << "Valores de a b" << endl;
  cin >> a >> b;
-
+ ite = 11;
+ 
  error=b-a;
  count=0;
- while( error > del ) {
+ while( count <10) {
   x=(a+b)/2;
   if (fx(x)*fx(a)<0)
    {
@@ -35,12 +36,12 @@ int main()
    else {
     a=x;
    }
-  error=f(x)
+  error=fx(x);
   count++;
- }
-
   cout << "Número de iteraciones: " <<count<< endl;
   cout << "Raiz: "<<x<<endl;
-  cout << "Error estimado: "<<error<<endl;
+
+ }
+
   return 0;
 }

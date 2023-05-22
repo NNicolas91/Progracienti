@@ -1,0 +1,1 @@
+Grafica de los puntos de las iteraciones del programa de newton.

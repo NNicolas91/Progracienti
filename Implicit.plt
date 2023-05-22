@@ -4,7 +4,9 @@
 set contour
 set key off
 set cntrparam levels discrete 0
+#perspectiva 2D
 set view map
+#Quita la superficie de la grafica
 unset surface
 set isosamples 1000,1000
 set xrange [-3:3]
