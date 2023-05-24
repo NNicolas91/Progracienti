@@ -22,7 +22,7 @@ int main()
  double a,xo,yo,x,y,df,dfx,dfy,error,h,del;
  del=1e-6;
  h=1e-6;
- a=0.01;
+ a=0.1;
  
  cout << "Valor de xo" << endl;
  cin >> xo;
@@ -38,8 +38,12 @@ int main()
   x=xo-a*dfx/df;
   y=yo-a*dfy/df;
   error=sqrt((x-xo)*(x-xo)+(y-yo)*(y-yo));
+  if(fxy(x,y)>=fxy(xo,yo)){
+  a = a*0.9;
+  }else{
   xo=x;
   yo=y;
+  }
   count++;
  }
 

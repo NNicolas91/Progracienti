@@ -1,5 +1,5 @@
-#set term pngcairo size 500,500
-#set output "figura.png"
+set term pngcairo size 500,500
+set output "figura.png"
 set term postscript color
 set output "figura.eps"
 

@@ -1,7 +1,7 @@
 %!PS-Adobe-2.0
 %%Title: figura.eps
-%%Creator: gnuplot 5.4 patchlevel 6
-%%CreationDate: Fri May 19 14:27:39 2023
+%%Creator: gnuplot 5.4 patchlevel 2
+%%CreationDate: Tue May 23 16:06:00 2023
 %%DocumentFonts: (atend)
 %%BoundingBox: 50 50 554 770
 %%Orientation: Landscape
@@ -431,64 +431,6 @@ Level1 {Level1PatternFill} {Level2PatternFill} ifelse
 dup length dict begin {1 index /FID eq {pop pop} {def} ifelse} forall
 currentdict end definefont pop
 %
-%
-% Base ISO8859-1 character encoding plus support macros for UTF-8 encoding
-% via the glyphshow operator
-%
-/reencodeISO {
-dup dup findfont dup length dict begin
-{ 1 index /FID ne { def }{ pop pop } ifelse } forall
-currentdict /CharStrings known {
-	CharStrings /Idieresis known {
-		/Encoding ISOLatin1Encoding def } if
-} if
-currentdict end definefont
-} def
-/ISOLatin1Encoding [
-/.notdef/.notdef/.notdef/.notdef/.notdef/.notdef/.notdef/.notdef
-/.notdef/.notdef/.notdef/.notdef/.notdef/.notdef/.notdef/.notdef
-/.notdef/.notdef/.notdef/.notdef/.notdef/.notdef/.notdef/.notdef
-/.notdef/.notdef/.notdef/.notdef/.notdef/.notdef/.notdef/.notdef
-/space/exclam/quotedbl/numbersign/dollar/percent/ampersand/quoteright
-/parenleft/parenright/asterisk/plus/comma/minus/period/slash
-/zero/one/two/three/four/five/six/seven/eight/nine/colon/semicolon
-/less/equal/greater/question/at/A/B/C/D/E/F/G/H/I/J/K/L/M/N
-/O/P/Q/R/S/T/U/V/W/X/Y/Z/bracketleft/backslash/bracketright
-/asciicircum/underscore/quoteleft/a/b/c/d/e/f/g/h/i/j/k/l/m
-/n/o/p/q/r/s/t/u/v/w/x/y/z/braceleft/bar/braceright/asciitilde
-/.notdef/.notdef/.notdef/.notdef/.notdef/.notdef/.notdef/.notdef
-/.notdef/.notdef/.notdef/.notdef/.notdef/.notdef/.notdef/.notdef
-/.notdef/dotlessi/grave/acute/circumflex/tilde/macron/breve
-/dotaccent/dieresis/.notdef/ring/cedilla/.notdef/hungarumlaut
-/ogonek/caron/space/exclamdown/cent/sterling/currency/yen/brokenbar
-/section/dieresis/copyright/ordfeminine/guillemotleft/logicalnot
-/hyphen/registered/macron/degree/plusminus/twosuperior/threesuperior
-/acute/mu/paragraph/periodcentered/cedilla/onesuperior/ordmasculine
-/guillemotright/onequarter/onehalf/threequarters/questiondown
-/Agrave/Aacute/Acircumflex/Atilde/Adieresis/Aring/AE/Ccedilla
-/Egrave/Eacute/Ecircumflex/Edieresis/Igrave/Iacute/Icircumflex
-/Idieresis/Eth/Ntilde/Ograve/Oacute/Ocircumflex/Otilde/Odieresis
-/multiply/Oslash/Ugrave/Uacute/Ucircumflex/Udieresis/Yacute
-/Thorn/germandbls/agrave/aacute/acircumflex/atilde/adieresis
-/aring/ae/ccedilla/egrave/eacute/ecircumflex/edieresis/igrave
-/iacute/icircumflex/idieresis/eth/ntilde/ograve/oacute/ocircumflex
-/otilde/odieresis/divide/oslash/ugrave/uacute/ucircumflex/udieresis
-/yacute/thorn/ydieresis
-] def
-
-/Gshow { dup type /stringtype eq { show } { glyphshow } ifelse } def
-
-/Gsall { {Gshow} forall } def
-/Gwidth {
-	dup currentpoint pop exch
-	gsave 6 array currentmatrix nulldevice setmatrix Gsall currentpoint pop grestore sub
-	} def
-/GLshow {currentpoint stroke M 0 vshift R 
-	Blacktext {gsave 0 setgray Gsall grestore} {Gsall} ifelse} def
-/GRshow {currentpoint stroke M dup Gwidth vshift R
-	Blacktext {gsave 0 setgray Gsall grestore} {Gsall} ifelse} def
-/GCshow {currentpoint stroke M dup Gwidth 2 div vshift R 
-	Blacktext {gsave 0 setgray Gsall grestore} {Gsall} ifelse} def
 /Metrics {ExtendTextBox Gswidth} def
 /Lwidth {currentpoint stroke M 0 vshift R Metrics} def
 /Rwidth {currentpoint stroke M dup stringwidth pop neg vshift R Metrics} def
@@ -529,7 +471,6 @@ currentdict end definefont
   Blacktext {gsave 0 setgray MFshow grestore} {MFshow} ifelse } bind def
 /XYsave    { [( ) 1 2 true false 3 ()] } bind def
 /XYrestore { [( ) 1 2 true false 4 ()] } bind def
-/Helvetica reencodeISO def
 Level1 SuppressPDFMark or 
 {} {
 /SDict 10 dict def
@@ -539,10 +480,10 @@ systemdict /pdfmark known not {
 SDict begin [
   /Title (figura.eps)
   /Subject (gnuplot plot)
-  /Creator (gnuplot 5.4 patchlevel 6)
+  /Creator (gnuplot 5.4 patchlevel 2)
 %  /Producer (gnuplot)
 %  /Keywords ()
-  /CreationDate (Fri May 19 14:27:39 2023)
+  /CreationDate (Tue May 23 16:06:00 2023)
   /DOCINFO pdfmark
 end
 } ifelse
@@ -592,21 +533,20 @@ LCb setrgbcolor
 0.500 UL
 LTa
 LCa setrgbcolor
-1696 658 M
-4241 0 V
+686 448 M
+6261 0 V
 stroke
 1.000 UL
 LTb
 LCb setrgbcolor
-1696 658 M
+686 448 M
 63 0 V
-4178 0 R
+6198 0 R
 -63 0 V
-/Arial reencodeISO def
 stroke
-1612 658 M
-[ [(Arial) 200.0 0.0 true true 0 (-3)]
-] -66.7 MRshow
+602 448 M
+[ [(Arial) 180.0 0.0 true true 0 (-2)]
+] -60.0 MRshow
 /Helvetica findfont 140 scalefont setfont
 /vshift -46 def
 1.000 UL
@@ -615,20 +555,20 @@ LCb setrgbcolor
 0.500 UL
 LTa
 LCa setrgbcolor
-1696 1011 M
-4241 0 V
+686 1004 M
+6261 0 V
 stroke
 1.000 UL
 LTb
 LCb setrgbcolor
-1696 1011 M
+686 1004 M
 63 0 V
-4178 0 R
+6198 0 R
 -63 0 V
 stroke
-1612 1011 M
-[ [(Arial) 200.0 0.0 true true 0 (-2.5)]
-] -66.7 MRshow
+602 1004 M
+[ [(Arial) 180.0 0.0 true true 0 (-1.5)]
+] -60.0 MRshow
 /Helvetica findfont 140 scalefont setfont
 1.000 UL
 LTb
@@ -636,20 +576,20 @@ LCb setrgbcolor
 0.500 UL
 LTa
 LCa setrgbcolor
-1696 1365 M
-4241 0 V
+686 1561 M
+6261 0 V
 stroke
 1.000 UL
 LTb
 LCb setrgbcolor
-1696 1365 M
+686 1561 M
 63 0 V
-4178 0 R
+6198 0 R
 -63 0 V
 stroke
-1612 1365 M
-[ [(Arial) 200.0 0.0 true true 0 (-2)]
-] -66.7 MRshow
+602 1561 M
+[ [(Arial) 180.0 0.0 true true 0 (-1)]
+] -60.0 MRshow
 /Helvetica findfont 140 scalefont setfont
 1.000 UL
 LTb
@@ -657,20 +597,20 @@ LCb setrgbcolor
 0.500 UL
 LTa
 LCa setrgbcolor
-1696 1718 M
-4241 0 V
+686 2117 M
+6261 0 V
 stroke
 1.000 UL
 LTb
 LCb setrgbcolor
-1696 1718 M
+686 2117 M
 63 0 V
-4178 0 R
+6198 0 R
 -63 0 V
 stroke
-1612 1718 M
-[ [(Arial) 200.0 0.0 true true 0 (-1.5)]
-] -66.7 MRshow
+602 2117 M
+[ [(Arial) 180.0 0.0 true true 0 (-0.5)]
+] -60.0 MRshow
 /Helvetica findfont 140 scalefont setfont
 1.000 UL
 LTb
@@ -678,20 +618,20 @@ LCb setrgbcolor
 0.500 UL
 LTa
 LCa setrgbcolor
-1696 2072 M
-4241 0 V
+686 2674 M
+6261 0 V
 stroke
 1.000 UL
 LTb
 LCb setrgbcolor
-1696 2072 M
+686 2674 M
 63 0 V
-4178 0 R
+6198 0 R
 -63 0 V
 stroke
-1612 2072 M
-[ [(Arial) 200.0 0.0 true true 0 (-1)]
-] -66.7 MRshow
+602 2674 M
+[ [(Arial) 180.0 0.0 true true 0 ( 0)]
+] -60.0 MRshow
 /Helvetica findfont 140 scalefont setfont
 1.000 UL
 LTb
@@ -699,20 +639,20 @@ LCb setrgbcolor
 0.500 UL
 LTa
 LCa setrgbcolor
-1696 2425 M
-4241 0 V
+686 3230 M
+6261 0 V
 stroke
 1.000 UL
 LTb
 LCb setrgbcolor
-1696 2425 M
+686 3230 M
 63 0 V
-4178 0 R
+6198 0 R
 -63 0 V
 stroke
-1612 2425 M
-[ [(Arial) 200.0 0.0 true true 0 (-0.5)]
-] -66.7 MRshow
+602 3230 M
+[ [(Arial) 180.0 0.0 true true 0 ( 0.5)]
+] -60.0 MRshow
 /Helvetica findfont 140 scalefont setfont
 1.000 UL
 LTb
@@ -720,20 +660,20 @@ LCb setrgbcolor
 0.500 UL
 LTa
 LCa setrgbcolor
-1696 2779 M
-4241 0 V
+686 3786 M
+6261 0 V
 stroke
 1.000 UL
 LTb
 LCb setrgbcolor
-1696 2779 M
+686 3786 M
 63 0 V
-4178 0 R
+6198 0 R
 -63 0 V
 stroke
-1612 2779 M
-[ [(Arial) 200.0 0.0 true true 0 ( 0)]
-] -66.7 MRshow
+602 3786 M
+[ [(Arial) 180.0 0.0 true true 0 ( 1)]
+] -60.0 MRshow
 /Helvetica findfont 140 scalefont setfont
 1.000 UL
 LTb
@@ -741,20 +681,20 @@ LCb setrgbcolor
 0.500 UL
 LTa
 LCa setrgbcolor
-1696 3132 M
-4241 0 V
+686 4343 M
+6261 0 V
 stroke
 1.000 UL
 LTb
 LCb setrgbcolor
-1696 3132 M
+686 4343 M
 63 0 V
-4178 0 R
+6198 0 R
 -63 0 V
 stroke
-1612 3132 M
-[ [(Arial) 200.0 0.0 true true 0 ( 0.5)]
-] -66.7 MRshow
+602 4343 M
+[ [(Arial) 180.0 0.0 true true 0 ( 1.5)]
+] -60.0 MRshow
 /Helvetica findfont 140 scalefont setfont
 1.000 UL
 LTb
@@ -762,20 +702,20 @@ LCb setrgbcolor
 0.500 UL
 LTa
 LCa setrgbcolor
-1696 3485 M
-4241 0 V
+686 4899 M
+6261 0 V
 stroke
 1.000 UL
 LTb
 LCb setrgbcolor
-1696 3485 M
+686 4899 M
 63 0 V
-4178 0 R
+6198 0 R
 -63 0 V
 stroke
-1612 3485 M
-[ [(Arial) 200.0 0.0 true true 0 ( 1)]
-] -66.7 MRshow
+602 4899 M
+[ [(Arial) 180.0 0.0 true true 0 ( 2)]
+] -60.0 MRshow
 /Helvetica findfont 140 scalefont setfont
 1.000 UL
 LTb
@@ -783,104 +723,20 @@ LCb setrgbcolor
 0.500 UL
 LTa
 LCa setrgbcolor
-1696 3839 M
-4241 0 V
+686 448 M
+0 4451 V
 stroke
 1.000 UL
 LTb
 LCb setrgbcolor
-1696 3839 M
-63 0 V
-4178 0 R
--63 0 V
-stroke
-1612 3839 M
-[ [(Arial) 200.0 0.0 true true 0 ( 1.5)]
-] -66.7 MRshow
-/Helvetica findfont 140 scalefont setfont
-1.000 UL
-LTb
-LCb setrgbcolor
-0.500 UL
-LTa
-LCa setrgbcolor
-1696 4192 M
-4241 0 V
-stroke
-1.000 UL
-LTb
-LCb setrgbcolor
-1696 4192 M
-63 0 V
-4178 0 R
--63 0 V
-stroke
-1612 4192 M
-[ [(Arial) 200.0 0.0 true true 0 ( 2)]
-] -66.7 MRshow
-/Helvetica findfont 140 scalefont setfont
-1.000 UL
-LTb
-LCb setrgbcolor
-0.500 UL
-LTa
-LCa setrgbcolor
-1696 4546 M
-4241 0 V
-stroke
-1.000 UL
-LTb
-LCb setrgbcolor
-1696 4546 M
-63 0 V
-4178 0 R
--63 0 V
-stroke
-1612 4546 M
-[ [(Arial) 200.0 0.0 true true 0 ( 2.5)]
-] -66.7 MRshow
-/Helvetica findfont 140 scalefont setfont
-1.000 UL
-LTb
-LCb setrgbcolor
-0.500 UL
-LTa
-LCa setrgbcolor
-1696 4899 M
-4241 0 V
-stroke
-1.000 UL
-LTb
-LCb setrgbcolor
-1696 4899 M
-63 0 V
-4178 0 R
--63 0 V
-stroke
-1612 4899 M
-[ [(Arial) 200.0 0.0 true true 0 ( 3)]
-] -66.7 MRshow
-/Helvetica findfont 140 scalefont setfont
-1.000 UL
-LTb
-LCb setrgbcolor
-0.500 UL
-LTa
-LCa setrgbcolor
-1696 658 M
-0 4241 V
-stroke
-1.000 UL
-LTb
-LCb setrgbcolor
-1696 658 M
+686 448 M
 0 63 V
-0 4178 R
+0 4388 R
 0 -63 V
 stroke
-1696 518 M
-[ [(Arial) 200.0 0.0 true true 0 (-3)]
-] -66.7 MCshow
+686 308 M
+[ [(Arial) 180.0 0.0 true true 0 ( 0)]
+] -60.0 MCshow
 /Helvetica findfont 140 scalefont setfont
 1.000 UL
 LTb
@@ -888,20 +744,20 @@ LCb setrgbcolor
 0.500 UL
 LTa
 LCa setrgbcolor
-2049 658 M
-0 4241 V
+1730 448 M
+0 4451 V
 stroke
 1.000 UL
 LTb
 LCb setrgbcolor
-2049 658 M
+1730 448 M
 0 63 V
-0 4178 R
+0 4388 R
 0 -63 V
 stroke
-2049 518 M
-[ [(Arial) 200.0 0.0 true true 0 (-2.5)]
-] -66.7 MCshow
+1730 308 M
+[ [(Arial) 180.0 0.0 true true 0 ( 0.5)]
+] -60.0 MCshow
 /Helvetica findfont 140 scalefont setfont
 1.000 UL
 LTb
@@ -909,20 +765,20 @@ LCb setrgbcolor
 0.500 UL
 LTa
 LCa setrgbcolor
-2403 658 M
-0 4241 V
+2773 448 M
+0 4451 V
 stroke
 1.000 UL
 LTb
 LCb setrgbcolor
-2403 658 M
+2773 448 M
 0 63 V
-0 4178 R
+0 4388 R
 0 -63 V
 stroke
-2403 518 M
-[ [(Arial) 200.0 0.0 true true 0 (-2)]
-] -66.7 MCshow
+2773 308 M
+[ [(Arial) 180.0 0.0 true true 0 ( 1)]
+] -60.0 MCshow
 /Helvetica findfont 140 scalefont setfont
 1.000 UL
 LTb
@@ -930,20 +786,20 @@ LCb setrgbcolor
 0.500 UL
 LTa
 LCa setrgbcolor
-2756 658 M
-0 4241 V
+3817 448 M
+0 4451 V
 stroke
 1.000 UL
 LTb
 LCb setrgbcolor
-2756 658 M
+3817 448 M
 0 63 V
-0 4178 R
+0 4388 R
 0 -63 V
 stroke
-2756 518 M
-[ [(Arial) 200.0 0.0 true true 0 (-1.5)]
-] -66.7 MCshow
+3817 308 M
+[ [(Arial) 180.0 0.0 true true 0 ( 1.5)]
+] -60.0 MCshow
 /Helvetica findfont 140 scalefont setfont
 1.000 UL
 LTb
@@ -951,20 +807,20 @@ LCb setrgbcolor
 0.500 UL
 LTa
 LCa setrgbcolor
-3110 658 M
-0 4241 V
+4860 448 M
+0 4451 V
 stroke
 1.000 UL
 LTb
 LCb setrgbcolor
-3110 658 M
+4860 448 M
 0 63 V
-0 4178 R
+0 4388 R
 0 -63 V
 stroke
-3110 518 M
-[ [(Arial) 200.0 0.0 true true 0 (-1)]
-] -66.7 MCshow
+4860 308 M
+[ [(Arial) 180.0 0.0 true true 0 ( 2)]
+] -60.0 MCshow
 /Helvetica findfont 140 scalefont setfont
 1.000 UL
 LTb
@@ -972,20 +828,20 @@ LCb setrgbcolor
 0.500 UL
 LTa
 LCa setrgbcolor
-3463 658 M
-0 4241 V
+5904 448 M
+0 4451 V
 stroke
 1.000 UL
 LTb
 LCb setrgbcolor
-3463 658 M
+5904 448 M
 0 63 V
-0 4178 R
+0 4388 R
 0 -63 V
 stroke
-3463 518 M
-[ [(Arial) 200.0 0.0 true true 0 (-0.5)]
-] -66.7 MCshow
+5904 308 M
+[ [(Arial) 180.0 0.0 true true 0 ( 2.5)]
+] -60.0 MCshow
 /Helvetica findfont 140 scalefont setfont
 1.000 UL
 LTb
@@ -993,146 +849,20 @@ LCb setrgbcolor
 0.500 UL
 LTa
 LCa setrgbcolor
-3817 658 M
-0 4241 V
+6947 448 M
+0 4451 V
 stroke
 1.000 UL
 LTb
 LCb setrgbcolor
-3817 658 M
+6947 448 M
 0 63 V
-0 4178 R
+0 4388 R
 0 -63 V
 stroke
-3817 518 M
-[ [(Arial) 200.0 0.0 true true 0 ( 0)]
-] -66.7 MCshow
-/Helvetica findfont 140 scalefont setfont
-1.000 UL
-LTb
-LCb setrgbcolor
-0.500 UL
-LTa
-LCa setrgbcolor
-4170 658 M
-0 4241 V
-stroke
-1.000 UL
-LTb
-LCb setrgbcolor
-4170 658 M
-0 63 V
-0 4178 R
-0 -63 V
-stroke
-4170 518 M
-[ [(Arial) 200.0 0.0 true true 0 ( 0.5)]
-] -66.7 MCshow
-/Helvetica findfont 140 scalefont setfont
-1.000 UL
-LTb
-LCb setrgbcolor
-0.500 UL
-LTa
-LCa setrgbcolor
-4523 658 M
-0 4241 V
-stroke
-1.000 UL
-LTb
-LCb setrgbcolor
-4523 658 M
-0 63 V
-0 4178 R
-0 -63 V
-stroke
-4523 518 M
-[ [(Arial) 200.0 0.0 true true 0 ( 1)]
-] -66.7 MCshow
-/Helvetica findfont 140 scalefont setfont
-1.000 UL
-LTb
-LCb setrgbcolor
-0.500 UL
-LTa
-LCa setrgbcolor
-4877 658 M
-0 4241 V
-stroke
-1.000 UL
-LTb
-LCb setrgbcolor
-4877 658 M
-0 63 V
-0 4178 R
-0 -63 V
-stroke
-4877 518 M
-[ [(Arial) 200.0 0.0 true true 0 ( 1.5)]
-] -66.7 MCshow
-/Helvetica findfont 140 scalefont setfont
-1.000 UL
-LTb
-LCb setrgbcolor
-0.500 UL
-LTa
-LCa setrgbcolor
-5230 658 M
-0 4241 V
-stroke
-1.000 UL
-LTb
-LCb setrgbcolor
-5230 658 M
-0 63 V
-0 4178 R
-0 -63 V
-stroke
-5230 518 M
-[ [(Arial) 200.0 0.0 true true 0 ( 2)]
-] -66.7 MCshow
-/Helvetica findfont 140 scalefont setfont
-1.000 UL
-LTb
-LCb setrgbcolor
-0.500 UL
-LTa
-LCa setrgbcolor
-5584 658 M
-0 4241 V
-stroke
-1.000 UL
-LTb
-LCb setrgbcolor
-5584 658 M
-0 63 V
-0 4178 R
-0 -63 V
-stroke
-5584 518 M
-[ [(Arial) 200.0 0.0 true true 0 ( 2.5)]
-] -66.7 MCshow
-/Helvetica findfont 140 scalefont setfont
-1.000 UL
-LTb
-LCb setrgbcolor
-0.500 UL
-LTa
-LCa setrgbcolor
-5937 658 M
-0 4241 V
-stroke
-1.000 UL
-LTb
-LCb setrgbcolor
-5937 658 M
-0 63 V
-0 4178 R
-0 -63 V
-stroke
-5937 518 M
-[ [(Arial) 200.0 0.0 true true 0 ( 3)]
-] -66.7 MCshow
+6947 308 M
+[ [(Arial) 180.0 0.0 true true 0 ( 3)]
+] -60.0 MCshow
 /Helvetica findfont 140 scalefont setfont
 1.000 UL
 LTb
@@ -1140,210 +870,214 @@ LCb setrgbcolor
 1.000 UL
 LTB
 LCb setrgbcolor
-1696 4899 N
-0 -4241 V
-4241 0 V
-0 4241 V
--4241 0 V
+686 4899 N
+686 448 L
+6261 0 V
+0 4451 V
+-6261 0 V
 Z stroke
 1.000 UP
-1.00 0.00 0.00 C
-4170 1082 M
-[ [(Arial) 200.0 0.0 true true 0 (x)]
-[(Arial) 160.0 100.0 true true 0 (2)]
-[(Arial) 200.0 0.0 true true 0 (+y)]
-[(Arial) 160.0 100.0 true true 0 (2)]
-[(Arial) 200.0 0.0 true true 0 (-4=0)]
-] -86.7 MLshow
-/Helvetica findfont 140 scalefont setfont
-0.00 0.00 1.00 C
-3817 4546 M
-[ [(Arial) 200.0 0.0 true true 0 (e)]
-[(Arial) 160.0 100.0 true true 0 (x)]
-[(Arial) 200.0 0.0 true true 0 (-3y-1=0)]
+0.90 0.12 0.06 C
+1730 3786 M
+[ [(arial) 200.0 0.0 true true 0 (f\(x\)=e)]
+[(arial) 160.0 100.0 true true 0 (x)]
+[(arial) 200.0 0.0 true true 0 (ln\(x\)-x)]
+[(arial) 160.0 100.0 true true 0 (2)]
 ] -86.7 MLshow
 /Helvetica findfont 140 scalefont setfont
 1.000 UL
 LTb
 LCb setrgbcolor
 LCb setrgbcolor
-1017 2778 M
+133 2673 M
 currentpoint gsave translate -270 rotate 0 0 moveto
-[ [(Arial) 300.0 0.0 true true 0 (y)]
-] -100.0 MCshow
+[ [(Arial) 260.0 0.0 true true 0 (f\(x\))]
+] -86.7 MCshow
 grestore
 /Helvetica findfont 140 scalefont setfont
 LTb
 LCb setrgbcolor
 3816 98 M
-[ [(Arial) 300.0 0.0 true true 0 (x)]
-] -100.0 MCshow
+[ [(Arial) 260.0 0.0 true true 0 (x)]
+] -86.7 MCshow
 /Helvetica findfont 140 scalefont setfont
 LTb
 % Begin plot #1
 2.000 UL
 LTb
 1.00 0.00 0.00 C
-5172 3180 M
-34 -139 V
-19 -142 V
-5 -142 V
--9 -143 V
--24 -140 V
--38 -138 V
--51 -133 V
--65 -127 V
--77 -121 V
--89 -111 V
-4777 1742 L
--109 -92 V
--118 -80 V
--126 -68 V
--132 -55 V
--136 -41 V
--141 -27 V
--142 -13 V
--142 1 V
--142 16 V
--140 30 V
--136 44 V
--130 58 V
--124 70 V
--117 83 V
--107 94 V
--98 104 V
--87 113 V
--74 122 V
--62 128 V
--49 135 V
--35 138 V
--21 141 V
--6 143 V
-8 142 V
-22 141 V
-36 138 V
-51 134 V
-63 128 V
-76 121 V
-87 112 V
-99 104 V
-109 92 V
-117 82 V
-125 69 V
-131 56 V
-136 42 V
-140 29 V
-142 14 V
-143 0 V
-142 -14 V
-140 -29 V
-136 -42 V
-131 -56 V
-125 -69 V
-117 -82 V
-109 -92 V
-99 -104 V
-87 -112 V
-76 -121 V
-63 -128 V
-51 -134 V
-36 -138 V
-22 -141 V
-8 -142 V
--6 -143 V
--21 -141 V
--35 -138 V
--49 -135 V
--62 -128 V
--74 -122 V
--87 -113 V
--98 -104 V
--107 -94 V
--117 -83 V
--124 -70 V
--130 -58 V
--136 -44 V
--140 -30 V
--142 -16 V
--142 -1 V
--142 13 V
--141 27 V
--136 41 V
--132 55 V
--126 68 V
--118 80 V
--109 92 V
--100 102 V
--89 111 V
--77 121 V
--65 127 V
--51 133 V
--38 138 V
--24 140 V
--9 143 V
-5 142 V
-19 142 V
-34 139 V
+1108 448 M
+21 42 V
+63 109 V
+63 93 V
+63 81 V
+64 71 V
+63 63 V
+63 57 V
+63 51 V
+64 46 V
+63 43 V
+63 39 V
+63 36 V
+64 33 V
+63 31 V
+63 30 V
+63 27 V
+64 26 V
+63 26 V
+63 24 V
+63 23 V
+64 24 V
+63 22 V
+63 23 V
+63 23 V
+64 23 V
+63 23 V
+63 24 V
+63 24 V
+63 26 V
+64 26 V
+63 28 V
+63 30 V
+63 30 V
+64 33 V
+63 35 V
+63 36 V
+63 39 V
+64 42 V
+63 44 V
+63 47 V
+63 50 V
+64 54 V
+63 57 V
+63 61 V
+63 65 V
+64 69 V
+63 73 V
+63 79 V
+63 83 V
+64 89 V
+63 94 V
+63 100 V
+63 106 V
+64 112 V
+63 120 V
+63 126 V
+63 134 V
+64 141 V
+63 150 V
+63 158 V
+63 167 V
+63 176 V
+64 186 V
+63 195 V
+63 207 V
+13 46 V
 % End plot #1
 % Begin plot #2
 stroke
 LTb
 0.00 0.00 1.00 C
-1696 2554 M
-14 1 V
-72 1 V
-71 2 V
-71 1 V
-72 2 V
-71 2 V
-72 2 V
-71 2 V
-71 3 V
-72 3 V
-71 3 V
-72 3 V
-71 4 V
-71 4 V
-72 5 V
-71 5 V
-72 6 V
-71 7 V
-71 7 V
-72 7 V
-71 9 V
-72 10 V
-71 10 V
-71 12 V
-72 13 V
-71 14 V
-72 16 V
-71 18 V
-71 19 V
-72 22 V
-71 24 V
-72 26 V
-71 29 V
-71 32 V
-72 36 V
-71 40 V
-72 43 V
-71 48 V
-71 54 V
-72 59 V
-71 65 V
-72 73 V
-71 80 V
-71 88 V
-72 98 V
-71 108 V
-72 120 V
-71 133 V
-71 147 V
-72 162 V
-71 179 V
-72 199 V
-71 220 V
-20 69 V
+686 2674 M
+63 0 V
+63 0 V
+64 0 V
+63 0 V
+63 0 V
+63 0 V
+64 0 V
+63 0 V
+63 0 V
+63 0 V
+64 0 V
+63 0 V
+63 0 V
+63 0 V
+64 0 V
+63 0 V
+63 0 V
+63 0 V
+64 0 V
+63 0 V
+63 0 V
+63 0 V
+64 0 V
+63 0 V
+63 0 V
+63 0 V
+64 0 V
+63 0 V
+63 0 V
+63 0 V
+64 0 V
+63 0 V
+63 0 V
+63 0 V
+63 0 V
+64 0 V
+63 0 V
+63 0 V
+63 0 V
+64 0 V
+63 0 V
+63 0 V
+63 0 V
+64 0 V
+63 0 V
+63 0 V
+63 0 V
+64 0 V
+63 0 V
+63 0 V
+63 0 V
+64 0 V
+63 0 V
+63 0 V
+63 0 V
+64 0 V
+63 0 V
+63 0 V
+63 0 V
+64 0 V
+63 0 V
+63 0 V
+63 0 V
+64 0 V
+63 0 V
+63 0 V
+63 0 V
+63 0 V
+64 0 V
+63 0 V
+63 0 V
+63 0 V
+64 0 V
+63 0 V
+63 0 V
+63 0 V
+64 0 V
+63 0 V
+63 0 V
+63 0 V
+64 0 V
+63 0 V
+63 0 V
+63 0 V
+64 0 V
+63 0 V
+63 0 V
+63 0 V
+64 0 V
+63 0 V
+63 0 V
+63 0 V
+64 0 V
+63 0 V
+63 0 V
+63 0 V
+64 0 V
+63 0 V
+63 0 V
 % End plot #2
 stroke
 LTb
@@ -1351,11 +1085,11 @@ LCb setrgbcolor
 1.000 UL
 LTB
 LCb setrgbcolor
-1696 4899 N
-0 -4241 V
-4241 0 V
-0 4241 V
--4241 0 V
+686 4899 N
+686 448 L
+6261 0 V
+0 4451 V
+-6261 0 V
 Z stroke
 1.000 UP
 1.000 UL
@@ -1365,3 +1099,6 @@ stroke
 grestore
 end
 showpage
+%%Trailer
+%%DocumentFonts: arial Arial Helvetica
+%%Pages: 1
